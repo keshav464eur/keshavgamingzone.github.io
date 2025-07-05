@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games Download</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #35c65d, #a8f3be);
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .header img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .game-list {
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .game-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-row h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .rating {
+      background: #00b258;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .latest {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    .platforms {
+      margin-top: 10px;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .ios {
+      background-color: #ccc;
+      color: white;
+      cursor: not-allowed;
+    }
+
+    .android {
+      background-color: #34c759;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔝 Header -->
+  <div class="header">
+    <img src="https://img.icons8.com/ios-filled/50/controller.png" alt="Game Icon" />
+    <h1>Games</h1>
+  </div>
+
+  <div class="game-list">
+
+    <!-- 🎮 GTA KV7 Game Card -->
+    <div class="card">
+      <img class="game-img" src="GTA-KV7.png" alt="GTA KV7" />
+      <div class="card-content">
+        <div class="title-row">
+          <h2>GTA KV7</h2>
+          <div class="rating">⭐ 4.8</div>
+        </div>
+        <div class="info">👤 1,000,000+ • ⬇️ Download</div>
+        <div class="latest">Latest: 1.0.3</div>
+        <div class="platforms">
+          <button class="btn ios" disabled>iOS</button>
+          <a href="https://drive.google.com/uc?export=download&id=1FnGr0wizIIozKCzLWZF3sC4zPGbiG73k">
+            <button class="btn android">Android</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
