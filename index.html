@@ -2,106 +2,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Games Download</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #a8f0a5, #37d27d);
             margin: 0;
-            font-family: sans-serif;
-            background: linear-gradient(to bottom, #a0eec0, #58cc71);
-        }
-        h1 {
-            text-align: center;
-            color: white;
             padding: 20px;
         }
         .game-card {
             background: white;
-            max-width: 400px;
+            border-radius: 20px;
+            padding: 20px;
             margin: 20px auto;
-            border-radius: 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            overflow: hidden;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
         .game-card img {
             width: 100px;
-            height: 100px;
-            border-radius: 12px;
-            float: left;
-            margin: 20px;
+            border-radius: 15px;
         }
-        .game-card-content {
-            overflow: hidden;
-            padding: 20px;
+        .game-card h3 {
+            margin: 10px 0 5px;
         }
-        .game-title {
-            font-size: 20px;
-            font-weight: bold;
+        .game-card p {
+            margin: 5px 0;
         }
-        .game-rating {
-            color: green;
-            font-weight: bold;
-        }
-        .button-container {
+        .download-btn {
+            display: inline-block;
             margin-top: 10px;
-        }
-        .button {
-            padding: 8px 14px;
+            padding: 8px 16px;
             border: none;
-            border-radius: 6px;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-        .android-btn {
-            background-color: #34c759;
+            background: #28a745;
             color: white;
+            border-radius: 10px;
+            text-decoration: none;
         }
-        .ios-btn {
-            background-color: #ccc;
-            color: white;
-        }
-        .download-count {
-            font-size: 14px;
-            color: #555;
-        }
-        .clear {
-            clear: both;
+        .disabled-btn {
+            background: #ccc;
         }
     </style>
 </head>
 <body>
-    <h1>Games</h1>
+    <h1 style="text-align:center;">Games</h1>
 
     <div class="game-card">
-        <img src="gta_kv7.jpg" alt="GTA KV7" />
-        <div class="game-card-content">
-            <div class="game-title">GTA KV7</div>
-            <div class="download-count">👤 1,000,000+ • ⭐ 4.8</div>
-            <p>Download</p>
-            <p><strong>Latest:</strong> 1.0.3</p>
-            <div class="button-container">
-                <button class="button ios-btn" disabled>iOS</button>
-                <a href="GTA_KV7.apk" download><button class="button android-btn">Android</button></a>
-            </div>
-        </div>
-        <div class="clear"></div>
+        <img src="gta_kv7.jpg" alt="GTA KV7">
+        <h3>GTA KV7</h3>
+        <p>1,000,000+ • Download</p>
+        <p>Latest: 1.0.3</p>
+        <a class="download-btn" href="GTA_KV7.apk">Android</a>
+        <span class="download-btn disabled-btn">iOS</span>
     </div>
 
     <div class="game-card">
-        <img src="free_fire_kv.jpg" alt="Free Fire KV" />
-        <div class="game-card-content">
-            <div class="game-title">Free Fire KV</div>
-            <div class="download-count">👤 1,735,892,993+ • ⭐ 4.8</div>
-            <p>Download</p>
-            <p><strong>Latest:</strong> Same</p>
-            <div class="button-container">
-                <button class="button ios-btn" disabled>iOS</button>
-                <a href="FFI.apk" download><button class="button android-btn">Android</button></a>
-            </div>
-        </div>
-        <div class="clear"></div>
+        <img src="free_fire_kv.jpg" alt="Free Fire KV">
+        <h3>Free Fire KV</h3>
+        <p>1,735,892,993+ • Download</p>
+        <p>Latest: 1.0.3</p>
+        <a class="download-btn" href="FFI.apk">Android</a>
+        <span class="download-btn disabled-btn">iOS</span>
     </div>
-
 </body>
 </html>
